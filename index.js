@@ -18,7 +18,7 @@ client.on('interactionCreate', async interaction => {
 
 	if (commandName === 'ph0n1') {
     tokenId = +tokenId
-    const url = `https://ipfs.io/ipfs/QmdVbsF8p5B3z7LTMCZVQD4ScJvrnDgN3jwAYeK896iWD1/0n1_phonescreen_${tokenId}.png`
+    const url = `https://ipfs.io/ipfs/QmSxtY22q1zJevNPpXGVcithWEpnRq5UoxBmBSNghzxupR/0n1_phonescreen_${tokenId}.png`
 		await interaction.reply(url);
 	}
 });
