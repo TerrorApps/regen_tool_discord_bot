@@ -21,6 +21,15 @@ client.on('interactionCreate', async interaction => {
     const url = `https://regentool.mypinata.cloud/ipfs/QmPSmLFF9aPM3CSU6WSTrtxobPGt6xxmLsEkNRo8K8YQZn/0n1_phonescreen_${tokenId}.png`
 		await interaction.reply(url);
 	}
+
+  if (commandName === "genesis") {
+    if (tokenId.length < 4) {
+      for (let i = tokenId.length; i < 4; i++) {
+        tokenId = "0" + tokenId
+      }
+    }
+    const url = `https://ipfs.io/ipfs/QmcoavNZq2jyZGe2Zi4nanQqzU9hRPxunHAo8pgYZ5fSep/${tokenId}.png`
+  }
 });
 
 client.login(token);

@@ -10,8 +10,16 @@ const ph0n1 =	new SlashCommandBuilder()
 	  	option.setName('tokenid')
 	  		.setDescription('tokenid of your nft')
 	  		.setRequired(true));
+const genesis =	new SlashCommandBuilder()
+	  .setName('genesis')
+	  .setDescription('return phone screen img of your 0n1')
+	  .addStringOption(option =>
+	  	option.setName('tokenid')
+	  		.setDescription('tokenid of your nft')
+	  		.setRequired(true));
 const commands = [
-  ph0n1
+  ph0n1,
+  genesis
 ]
 	.map(command => command.toJSON());
 
